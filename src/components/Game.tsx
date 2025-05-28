@@ -383,12 +383,25 @@ export default function Game({ initialRandomMode }: GameProps) {
                 ))}
               </div>
               <div className="text-white text-lg mb-4">Want to play again?</div>
-              <button
-                onClick={() => window.location.reload()}
-                className="play-again-button"
-              >
-                Play Again
-              </button>
+              <div className="flex flex-col gap-4 w-full">
+                <button
+                  onClick={() => window.location.reload()}
+                  className="play-again-button"
+                >
+                  Play Again
+                </button>
+                <button
+                  onClick={() => window.open('https://algotard.io/tardly', '_blank')}
+                  className="w-full py-4 px-6 bg-[#fcd100] hover:bg-[#d4b000] text-white rounded-lg transition-colors duration-200 font-bold text-xl md:text-2xl"
+                  style={{ 
+                    fontFamily: "'SuperMario256', sans-serif",
+                    WebkitTextStroke: '2px black',
+                    textShadow: '2px 2px 0px black'
+                  }}
+                >
+                  Win Prizes at Tardly
+                </button>
+              </div>
             </div>
           )}
         </div>

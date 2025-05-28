@@ -137,6 +137,18 @@ export function VictoryModal({ isOpen, onPlayAgain, guesses, letterStates, isDai
           >
             Share on Twitter
           </button>
+
+          <button
+            onClick={() => window.open('https://algotard.io/tardly', '_blank')}
+            className="w-full py-4 px-6 bg-[#fcd100] hover:bg-[#d4b000] text-white rounded-lg transition-colors duration-200 font-bold text-xl md:text-2xl"
+            style={{ 
+              fontFamily: "'SuperMario256', sans-serif",
+              WebkitTextStroke: '2px black',
+              textShadow: '2px 2px 0px black'
+            }}
+          >
+            Win Prizes at Tardly
+          </button>
         </div>
       </div>
     </div>
